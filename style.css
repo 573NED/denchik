@@ -8,13 +8,19 @@
     src: url("/assets/fonts/gilroy_bold.ttf");
 }
 
-body {
-    width: 940px;
+h1 {
+    font-size: 34px;
+    font-family: 'Gilroy_bold';
+}   
+
+html {
     font-family: 'Gilroy';
-    margin: auto;
     font-size: 18px;
 
+}
 
+.wrapper {
+    width: 100%;
 }
 
 header {
@@ -22,7 +28,11 @@ header {
     background: #ffffff;
     font-family: 'Gilroy_bold';
     width: 100%;
-
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -10px;
+    margin-left: 0px;
 }
 
 nav {
@@ -56,6 +66,8 @@ hr {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    width: 940px;
+    margin: auto;
 }
 
 .hi h1 {
@@ -72,4 +84,54 @@ hr {
 }
 .lang .active {
     color: #000000;
+}
+
+.me {
+    display: flex;
+    margin-top: 104px;
+    background: #f6f6f6;
+    height: 506px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 91px;
+}
+
+.apps {
+    display: flex;
+    flex-direction: row;
+}
+
+.apps div {
+    width:166px;
+    height:206px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 83px;
+}
+
+.portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: #f6f6f6;
+    margin-top: 110px;
+    padding-top: 112px;
+}
+.portfolio a {
+    color: #000000;
+    padding-top: 44px;
+    padding-bottom: 100px;
 }
