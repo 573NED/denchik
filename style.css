@@ -8,12 +8,14 @@
     src: url("/assets/fonts/gilroy_bold.ttf");
 }
 
-body {
-    width: 940px;
-    font-family: 'Gilroy';
-    margin: auto;
-    font-size: 18px;
+h1 {
+    font-size: 34px;
+    font-family: 'Gilroy_bold';
+}
 
+html {
+    font-family: 'Gilroy';
+    font-size: 18px;
 
 }
 
@@ -22,7 +24,11 @@ header {
     background: #ffffff;
     font-family: 'Gilroy_bold';
     width: 100%;
-
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -10px;
+    margin-left: 0px;
 }
 
 nav {
@@ -38,17 +44,18 @@ nav a {
     text-decoration: none;
     color: #828282;
 }
-nav a:hover{
+
+nav a:hover {
     color: #000000;
 }
-hr {    
-    color: #828282; 
-    background-color: #828282; 
+
+hr {
+    color: #828282;
+    background-color: #828282;
     margin: 0 0 0 0;
     width: 940px;
 
 }
-
 
 .hi {
     padding-top: 88px;
@@ -56,6 +63,8 @@ hr {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    width: 940px;
+    margin: auto;
 }
 
 .hi h1 {
@@ -70,6 +79,18 @@ hr {
     transform: rotate(-180deg);
     color: #828282;
 }
+
 .lang .active {
     color: #000000;
+}
+
+.me {
+    display: flex;
+    margin-top: 104px;
+    background: #f6f6f6;
+    height: 506px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
