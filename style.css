@@ -16,7 +16,6 @@ h1 {
 html {
     font-family: 'Gilroy';
     font-size: 18px;
-
 }
 
 header {
@@ -93,4 +92,26 @@ hr {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 91px;
+}
+
+.apps {
+    display: flex;
+    flex-direction: row;
+}
+
+.apps div {
+    width: 166px;
+    height: 206px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 83px;
 }
