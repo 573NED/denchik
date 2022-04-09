@@ -182,7 +182,6 @@ footer {
 footer i {
     font-size: 40px;
     padding: 0 30px 0 30px;
-    transition: 0.5s;
 }
 
 .follow {
@@ -209,7 +208,9 @@ footer i {
     color: #b8205b;
 }
 
-
+.fa-star{
+    animation: stars 1s infinite alternate linear;
+}
 
 header input[type="checkbox"] {
     display: none;
@@ -227,7 +228,7 @@ header label {
     cursor: pointer;
     color: #000000;
     padding-right: 30px;
-    padding-top: 10px ;
+    padding-top: 10px;
 }
 
 @media (max-width: 375px) {
@@ -244,7 +245,8 @@ header label {
         align-items: flex-start;
     }
 
-    .lang, hr {
+    .lang,
+    hr {
         display: none;
     }
 
@@ -252,19 +254,22 @@ header label {
         flex-direction: column;
     }
 
-    .portfolio img, .mail, .hi {
+    .portfolio img,
+    .mail,
+    .hi {
         width: 90%;
     }
 
     footer i {
         padding: 0 20px 0 20px;
     }
-    
+
     header {
         justify-content: flex-end;
         height: 46px;
         width: 100%;
     }
+
     header label {
         display: block;
 
@@ -280,11 +285,11 @@ header label {
         background-color: #ffffffb0;
     }
 
-    nav a{
+    nav a {
         flex-direction: column;
         color: #313131;
     }
-    
+
     .hi {
         padding-top: 10px;
     }
@@ -297,5 +302,15 @@ header label {
 
     100% {
         right: 0;
+    }
+}
+
+@keyframes stars {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(180deg);
     }
 }
