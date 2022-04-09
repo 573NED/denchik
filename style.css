@@ -145,3 +145,59 @@ hr {
 .portfolio img:hover {
     transform: scale(1.1);
 }
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 114px;
+}
+
+.mail {
+    font-size: 18px;
+    font-family: Gilroy_bold;
+    width: 180px;
+    border-width: 1px;
+    color: #ffffff;
+    border-color: #000000;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+    background: #000000;
+    text-decoration: none;
+    padding: 12px 0 12px 0;
+    margin-bottom: 85px;
+}
+
+footer i {
+    font-size: 40px;
+    padding: 0 30px 0 30px;
+    transition: 0.5s;
+}
+
+.follow {
+    color: #828282;
+    padding: 45px 0 125px 0;
+}
+
+.fa-linkedin:hover {
+    color: #0961b8;
+}
+
+.fa-instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-behance-square:hover {
+    color: #0053f2;
+}
+
+.fa-dribbble:hover {
+    color: #b8205b;
+}
