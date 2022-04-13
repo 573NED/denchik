@@ -16,6 +16,7 @@ h1 {
 html {
     font-family: 'Gilroy';
     font-size: 18px;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -54,6 +55,12 @@ hr {
     margin: 0 0 0 0;
     width: 940px;
 
+}
+
+.mainpic {
+    width: 940px;
+    height: 387px;
+    background-image: url(/assets/pics/me.png);
 }
 
 .hi {
@@ -175,7 +182,6 @@ footer {
 footer i {
     font-size: 40px;
     padding: 0 30px 0 30px;
-    transition: 0.5s;
 }
 
 .follow {
@@ -190,7 +196,7 @@ footer i {
 .fa-instagram:hover {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     -webkit-background-clip: text;
-            background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -200,4 +206,111 @@ footer i {
 
 .fa-dribbble:hover {
     color: #b8205b;
+}
+
+.fa-star{
+    animation: stars 1s infinite alternate linear;
+}
+
+header input[type="checkbox"] {
+    display: none;
+}
+
+header input[type="checkbox"]:checked~nav {
+    display: block;
+    animation: menuShow 0.5s normal;
+}
+
+header label {
+    float: right;
+    display: none;
+    font-size: 36px;
+    cursor: pointer;
+    color: #000000;
+    padding-right: 30px;
+    padding-top: 10px;
+}
+
+@media (max-width: 375px) {
+    .mainpic {
+        width: 90%;
+        height: 478px;
+        background-image: url(/assets/pics/memob.png);
+        align-self: center;
+
+    }
+
+    .hi {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .lang,
+    hr {
+        display: none;
+    }
+
+    .apps {
+        flex-direction: column;
+    }
+
+    .portfolio img,
+    .mail,
+    .hi {
+        width: 90%;
+    }
+
+    footer i {
+        padding: 0 20px 0 20px;
+    }
+
+    header {
+        justify-content: flex-end;
+        height: 46px;
+        width: 100%;
+    }
+
+    header label {
+        display: block;
+
+    }
+
+    header nav {
+        position: absolute;
+        display: none;
+        top: 50px;
+        width: 50%;
+        font-size: 32px;
+        height: fit-content;
+        background-color: #ffffffb0;
+    }
+
+    nav a {
+        flex-direction: column;
+        color: #313131;
+    }
+
+    .hi {
+        padding-top: 10px;
+    }
+}
+
+@keyframes menuShow {
+    0% {
+        right: -200px;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes stars {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(180deg);
+    }
 }
